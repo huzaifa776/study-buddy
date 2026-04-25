@@ -1,6 +1,0 @@
-langchain
-langchain-groq
-langchain-google-genai
-pandas
-gradio
-python-dotenv

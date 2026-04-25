@@ -1,15 +1,18 @@
-from langchain.output_parsers import PydanticOutputParser
+from langchain_core.output_parsers import PydanticOutputParser
 from src.models.question_schemas import MCQQuestion,FillBlankQuestion
-from src.prompts.templates import mcq_prompt_template,fill_blank_prompt_template
-from src.llm.groq_client import get_groq_llm
+from src.prompt.templates import mcq_prompt_template,fill_blank_prompt_template
+from src.llm.groq_client import get_llm
 from src.config.settings import settings
 from src.common.logger import get_logger
 from src.common.custom_exception import CustomException
+import json
+import re
 
 
 class QuestionGenerator:
-    def __init__(self):
-        self.llm = get_groq_llm()
+    def __init__(self, provider: str = "Llama 80B powered by Groq"):
+        self.provider = provider
+        self.llm = get_llm(provider)
         self.logger = get_logger(self.__class__.__name__)
 
     def _retry_and_parse(self,prompt,parser,topic,difficulty):
@@ -20,7 +23,29 @@ class QuestionGenerator:
 
                 response = self.llm.invoke(prompt.format(topic=topic , difficulty=difficulty))
 
-                parsed = parser.parse(response.content)
+                # Handle different response formats (Groq vs Gemini)
+                content = response.content
+                
+                # Gemini returns dict with 'text' key and metadata
+                if isinstance(content, dict) and 'text' in content:
+                    content = content['text']
+                # For some Gemini versions, content might be a list
+                elif isinstance(content, list):
+                    content = " ".join([str(item) for item in content])
+                
+                # Convert to string if it's not already
+                content_str = str(content)
+                
+                # Extract JSON from wrapped dict format: {'type': 'text', 'text': '{...}', 'extras': {...}}
+                if content_str.startswith("{'type': 'text', 'text':"):
+                    # Extract the JSON part between the quotes
+                    match = re.search(r"'text': '(.*?)', 'extras':", content_str, re.DOTALL)
+                    if match:
+                        content_str = match.group(1)
+                        # Unescape the escaped characters
+                        content_str = content_str.encode().decode('unicode_escape')
+                
+                parsed = parser.parse(content_str)
 
                 self.logger.info("Sucesfully parsed the question")
 

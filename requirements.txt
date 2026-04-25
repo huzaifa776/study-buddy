@@ -1,5 +1,6 @@
 langchain
 langchain-groq
+langchain-google-genai
 pandas
-streamlit
+gradio
 python-dotenv

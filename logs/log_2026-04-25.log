@@ -1,0 +1,349 @@
+2026-04-25 15:07:56,483 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-initiated-analytics "HTTP/1.1 200 OK"
+2026-04-25 15:07:56,980 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-25 15:10:11,185 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-initiated-analytics "HTTP/1.1 200 OK"
+2026-04-25 15:10:11,663 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-25 15:12:01,874 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-initiated-analytics "HTTP/1.1 200 OK"
+2026-04-25 15:12:02,805 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-25 15:14:31,057 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-04-25 15:14:31,066 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-25 15:14:31,077 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-initiated-analytics "HTTP/1.1 200 OK"
+2026-04-25 15:14:31,193 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-launched-telemetry "HTTP/1.1 200 OK"
+2026-04-25 15:14:31,537 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-25 15:15:17,219 - INFO - Generating question for topic machine learning with difficulty easy
+2026-04-25 15:15:17,225 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:15:17,339 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-04-25 15:15:17,340 - ERROR - Error coming : Error calling model 'gemini-3-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-3-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-04-25 15:15:17,340 - INFO - Generating question for topic machine learning with difficulty easy
+2026-04-25 15:15:17,341 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:15:17,420 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-04-25 15:15:17,420 - ERROR - Error coming : Error calling model 'gemini-3-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-3-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-04-25 15:15:17,421 - INFO - Generating question for topic machine learning with difficulty easy
+2026-04-25 15:15:17,421 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:15:17,509 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-04-25 15:15:17,510 - ERROR - Error coming : Error calling model 'gemini-3-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-3-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-04-25 15:15:17,510 - ERROR - Failed to generate MCQ : Generation failed after 3 attempts | Error: Error calling model 'gemini-3-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-3-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}} | File: /Users/huzaifamahmood/Desktop/study buddy/src/generator/question_generator.py | Line: 22
+2026-04-25 15:15:26,533 - INFO - Generating question for topic machine learning with difficulty easy
+2026-04-25 15:15:26,813 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:15:26,827 - INFO - Sucesfully parsed the question
+2026-04-25 15:15:26,827 - INFO - Generated a valid MCQ Question
+2026-04-25 15:15:26,827 - INFO - Generating question for topic machine learning with difficulty easy
+2026-04-25 15:15:27,096 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:15:27,098 - INFO - Sucesfully parsed the question
+2026-04-25 15:15:27,098 - INFO - Generated a valid MCQ Question
+2026-04-25 15:15:27,098 - INFO - Generating question for topic machine learning with difficulty easy
+2026-04-25 15:15:27,314 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:15:27,315 - INFO - Sucesfully parsed the question
+2026-04-25 15:15:27,315 - INFO - Generated a valid MCQ Question
+2026-04-25 15:15:27,315 - INFO - Generating question for topic machine learning with difficulty easy
+2026-04-25 15:15:27,711 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:15:27,713 - INFO - Sucesfully parsed the question
+2026-04-25 15:15:27,713 - INFO - Generated a valid MCQ Question
+2026-04-25 15:15:27,713 - INFO - Generating question for topic machine learning with difficulty easy
+2026-04-25 15:15:28,222 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:15:28,224 - INFO - Sucesfully parsed the question
+2026-04-25 15:15:28,224 - INFO - Generated a valid MCQ Question
+2026-04-25 15:20:53,110 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-initiated-analytics "HTTP/1.1 200 OK"
+2026-04-25 15:20:53,687 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-25 15:21:15,150 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-04-25 15:21:15,158 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-25 15:21:15,190 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-initiated-analytics "HTTP/1.1 200 OK"
+2026-04-25 15:21:15,312 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-launched-telemetry "HTTP/1.1 200 OK"
+2026-04-25 15:21:15,631 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-25 15:22:10,857 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-initiated-analytics "HTTP/1.1 200 OK"
+2026-04-25 15:22:10,934 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-04-25 15:22:10,945 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-25 15:22:11,044 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-launched-telemetry "HTTP/1.1 200 OK"
+2026-04-25 15:22:11,337 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-25 15:22:30,579 - INFO - Generating question for topic GenAI with difficulty easy
+2026-04-25 15:22:30,585 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:22:39,332 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-04-25 15:22:39,333 - INFO - Retrying google.genai._api_client.BaseApiClient._request_once in 1.02 seconds as it raised ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}.
+2026-04-25 15:22:57,330 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:22:57,334 - ERROR - Error coming : 1 validation error for Generation
+text
+  Input should be a valid string [type=string_type, input_value=[{'type': 'text', 'text':...idct6FGpcYSVWZYcFg=='}}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+2026-04-25 15:22:57,334 - INFO - Generating question for topic GenAI with difficulty easy
+2026-04-25 15:22:57,334 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:23:23,467 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:23:23,469 - ERROR - Error coming : 1 validation error for Generation
+text
+  Input should be a valid string [type=string_type, input_value=[{'type': 'text', 'text':...APNeyrYDD7wrBClOJA=='}}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+2026-04-25 15:23:23,469 - INFO - Generating question for topic GenAI with difficulty easy
+2026-04-25 15:23:23,470 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:23:38,315 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:23:38,318 - ERROR - Error coming : 1 validation error for Generation
+text
+  Input should be a valid string [type=string_type, input_value=[{'type': 'text', 'text':...da/fwwEEczcUAWybnmk='}}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+2026-04-25 15:23:38,318 - ERROR - Failed to generate MCQ : Generation failed after 3 attempts | Error: 1 validation error for Generation
+text
+  Input should be a valid string [type=string_type, input_value=[{'type': 'text', 'text':...da/fwwEEczcUAWybnmk='}}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type | File: /Users/huzaifamahmood/Desktop/study buddy/src/generator/question_generator.py | Line: 24
+2026-04-25 15:23:38,387 - INFO - Generating question for topic GenAI with difficulty medium
+2026-04-25 15:23:38,829 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:23:38,847 - INFO - Sucesfully parsed the question
+2026-04-25 15:23:38,847 - INFO - Generated a valid MCQ Question
+2026-04-25 15:23:38,847 - INFO - Generating question for topic GenAI with difficulty medium
+2026-04-25 15:23:39,339 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:23:39,341 - INFO - Sucesfully parsed the question
+2026-04-25 15:23:39,341 - INFO - Generated a valid MCQ Question
+2026-04-25 15:23:39,341 - INFO - Generating question for topic GenAI with difficulty medium
+2026-04-25 15:23:39,748 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:23:39,750 - INFO - Sucesfully parsed the question
+2026-04-25 15:23:39,750 - INFO - Generated a valid MCQ Question
+2026-04-25 15:23:39,750 - INFO - Generating question for topic GenAI with difficulty medium
+2026-04-25 15:23:40,263 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:23:40,264 - INFO - Sucesfully parsed the question
+2026-04-25 15:23:40,264 - INFO - Generated a valid MCQ Question
+2026-04-25 15:23:40,264 - INFO - Generating question for topic GenAI with difficulty medium
+2026-04-25 15:23:40,670 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:23:40,671 - INFO - Sucesfully parsed the question
+2026-04-25 15:23:40,671 - INFO - Generated a valid MCQ Question
+2026-04-25 15:24:23,499 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:24:23,501 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:24:39,051 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:24:39,054 - ERROR - Error coming : 1 validation error for Generation
+text
+  Input should be a valid string [type=string_type, input_value=[{'type': 'text', 'text':...nhp1/K89mywWjw8PTg=='}}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+2026-04-25 15:24:39,054 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:24:39,054 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:24:47,538 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-04-25 15:24:47,539 - INFO - Retrying google.genai._api_client.BaseApiClient._request_once in 1.57 seconds as it raised ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}.
+2026-04-25 15:25:04,334 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:25:04,337 - ERROR - Error coming : 1 validation error for Generation
+text
+  Input should be a valid string [type=string_type, input_value=[{'type': 'text', 'text':...QuhBIwaM8uFOXkWZusY='}}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+2026-04-25 15:25:04,337 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:25:04,337 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:25:18,768 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:25:18,770 - ERROR - Error coming : 1 validation error for Generation
+text
+  Input should be a valid string [type=string_type, input_value=[{'type': 'text', 'text':.../RaOmkaG2tsgf/OdOj6X'}}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+2026-04-25 15:25:18,770 - ERROR - Failed to generate MCQ : Generation failed after 3 attempts | Error: 1 validation error for Generation
+text
+  Input should be a valid string [type=string_type, input_value=[{'type': 'text', 'text':.../RaOmkaG2tsgf/OdOj6X'}}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type | File: /Users/huzaifamahmood/Desktop/study buddy/src/generator/question_generator.py | Line: 24
+2026-04-25 15:28:00,708 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-04-25 15:28:00,716 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-25 15:28:00,727 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-initiated-analytics "HTTP/1.1 200 OK"
+2026-04-25 15:28:00,846 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-launched-telemetry "HTTP/1.1 200 OK"
+2026-04-25 15:28:01,209 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-25 15:28:17,256 - INFO - Generating question for topic LLM with difficulty easy
+2026-04-25 15:28:17,261 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:28:17,366 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-04-25 15:28:17,367 - ERROR - Error coming : Error calling model 'gemini-3.1-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-3.1-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-04-25 15:28:17,367 - INFO - Generating question for topic LLM with difficulty easy
+2026-04-25 15:28:17,368 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:28:17,424 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-04-25 15:28:17,425 - ERROR - Error coming : Error calling model 'gemini-3.1-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-3.1-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-04-25 15:28:17,425 - INFO - Generating question for topic LLM with difficulty easy
+2026-04-25 15:28:17,425 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:28:17,483 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-04-25 15:28:17,484 - ERROR - Error coming : Error calling model 'gemini-3.1-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-3.1-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-04-25 15:28:17,484 - ERROR - Failed to generate MCQ : Generation failed after 3 attempts | Error: Error calling model 'gemini-3.1-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-3.1-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}} | File: /Users/huzaifamahmood/Desktop/study buddy/src/generator/question_generator.py | Line: 22
+2026-04-25 15:29:50,837 - INFO - Generating question for topic Python basics with difficulty easy
+2026-04-25 15:29:50,838 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:29:52,416 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-04-25 15:29:52,418 - INFO - Retrying google.genai._api_client.BaseApiClient._request_once in 1.85 seconds as it raised ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}.
+2026-04-25 15:31:35,485 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:31:35,485 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:31:35,593 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-04-25 15:31:35,594 - ERROR - Error coming : Error calling model 'gemini-3.1-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-3.1-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-04-25 15:31:35,594 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:31:35,595 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:31:35,648 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-04-25 15:31:35,649 - ERROR - Error coming : Error calling model 'gemini-3.1-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-3.1-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-04-25 15:31:35,649 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:31:35,650 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:31:35,700 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-04-25 15:31:35,701 - ERROR - Error coming : Error calling model 'gemini-3.1-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-3.1-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-04-25 15:31:35,702 - ERROR - Failed to generate MCQ : Generation failed after 3 attempts | Error: Error calling model 'gemini-3.1-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-3.1-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}} | File: /Users/huzaifamahmood/Desktop/study buddy/src/generator/question_generator.py | Line: 22
+2026-04-25 15:31:47,321 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-04-25 15:31:47,331 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-25 15:31:47,336 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-initiated-analytics "HTTP/1.1 200 OK"
+2026-04-25 15:31:47,460 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-launched-telemetry "HTTP/1.1 200 OK"
+2026-04-25 15:31:47,827 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-25 15:31:55,099 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:31:55,680 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:31:55,693 - INFO - Sucesfully parsed the question
+2026-04-25 15:31:55,693 - INFO - Generated a valid MCQ Question
+2026-04-25 15:31:55,693 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:31:56,293 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:31:56,295 - INFO - Sucesfully parsed the question
+2026-04-25 15:31:56,295 - INFO - Generated a valid MCQ Question
+2026-04-25 15:31:56,295 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:31:56,804 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:31:56,806 - INFO - Sucesfully parsed the question
+2026-04-25 15:31:56,806 - INFO - Generated a valid MCQ Question
+2026-04-25 15:31:56,806 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:31:57,317 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:31:57,318 - INFO - Sucesfully parsed the question
+2026-04-25 15:31:57,318 - INFO - Generated a valid MCQ Question
+2026-04-25 15:31:57,318 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:31:57,614 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:31:57,616 - INFO - Sucesfully parsed the question
+2026-04-25 15:31:57,616 - INFO - Generated a valid MCQ Question
+2026-04-25 15:32:11,486 - INFO - Generating question for topic AI with difficulty medium
+2026-04-25 15:32:11,487 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:32:29,549 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:32:29,564 - ERROR - Error coming : Invalid json output: {'type': 'text', 'text': '{\n    "question": "In the context of machine learning, what does the term \'overfitting\' describe?",\n    "options": [\n        "A model that performs poorly on both training and test data",\n        "A model that learns the training data too well, including its noise and outliers",\n        "A model that uses too much computational power to reach a conclusion",\n        "A model that requires an excessive amount of labeled data to function"\n    ],\n    "correct_answer": "A model that learns the training data too well, including its noise and outliers"\n}', 'extras': {'signature': 'EjQKMgEMOdbHqnqXiS8GUtLjaAri++kYbk6llzefp0y6clB8pIL/eWUoZdN2gfi5ZUSZ4i4Z'}}
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+2026-04-25 15:32:29,564 - INFO - Generating question for topic AI with difficulty medium
+2026-04-25 15:32:29,565 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:32:33,216 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:32:33,229 - ERROR - Error coming : Invalid json output: {'type': 'text', 'text': '{\n    "question": "In the context of machine learning, what does the term \'overfitting\' refer to?",\n    "options": [\n        "A model performing well on training data but poorly on unseen test data",\n        "A model that is too simple to capture the underlying trend of the data",\n        "The process of cleaning a dataset to remove noise and outliers",\n        "A technique used to increase the size of a training dataset through data augmentation"\n    ],\n    "correct_answer": "A model performing well on training data but poorly on unseen test data"\n}', 'extras': {'signature': 'EjQKMgEMOdbHxXSv8fKQVIdryng/E8WC1f/f6EIJSaaJ9ahKNHbaMNwZ/8M+y0vFo5qJ4tMH'}}
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+2026-04-25 15:32:33,230 - INFO - Generating question for topic AI with difficulty medium
+2026-04-25 15:32:33,230 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:32:37,357 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:32:37,373 - ERROR - Error coming : Invalid json output: {'type': 'text', 'text': '{\n    "question": "In the context of machine learning, what does the term \'overfitting\' refer to?",\n    "options": [\n        "When a model performs poorly on training data but well on new data",\n        "When a model learns the training data too well, capturing noise instead of the underlying pattern",\n        "When a model is too simple to capture the complexity of the dataset",\n        "The process of increasing the number of hidden layers in a neural network"\n    ],\n    "correct_answer": "When a model learns the training data too well, capturing noise instead of the underlying pattern"\n}', 'extras': {'signature': 'EjQKMgEMOdbH56KLOOW2ofpo0fRhyaZx2nVw8l4EsNXA4IgP+aiPyRFdzLYPQf3JE9Gnzkvj'}}
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+2026-04-25 15:32:37,373 - ERROR - Failed to generate MCQ : Generation failed after 3 attempts | Error: Invalid json output: {'type': 'text', 'text': '{\n    "question": "In the context of machine learning, what does the term \'overfitting\' refer to?",\n    "options": [\n        "When a model performs poorly on training data but well on new data",\n        "When a model learns the training data too well, capturing noise instead of the underlying pattern",\n        "When a model is too simple to capture the complexity of the dataset",\n        "The process of increasing the number of hidden layers in a neural network"\n    ],\n    "correct_answer": "When a model learns the training data too well, capturing noise instead of the underlying pattern"\n}', 'extras': {'signature': 'EjQKMgEMOdbH56KLOOW2ofpo0fRhyaZx2nVw8l4EsNXA4IgP+aiPyRFdzLYPQf3JE9Gnzkvj'}}
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE  | File: /Users/huzaifamahmood/Desktop/study buddy/src/generator/question_generator.py | Line: 30
+2026-04-25 15:33:12,902 - INFO - Generating question for topic Python programming with difficulty easy
+2026-04-25 15:33:12,906 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:33:18,928 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:33:18,934 - ERROR - Error coming : Invalid json output: {'type': 'text', 'text': '{\n    "question": "Which keyword is used to define a function in Python?",\n    "options": ["func", "define", "def", "function"],\n    "correct_answer": "def"\n}', 'extras': {'signature': 'EjQKMgEMOdbHU8g5gEu93As5KnN7ejbVqKS2pqdY0myF+110nO9LIIVCmDYBSJFglrEAHlBj'}}
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+2026-04-25 15:33:18,934 - INFO - Generating question for topic Python programming with difficulty easy
+2026-04-25 15:33:18,935 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:33:20,365 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:33:20,372 - ERROR - Error coming : Invalid json output: {'type': 'text', 'text': '{\n    "question": "Which keyword is used to define a function in Python?",\n    "options": ["func", "define", "def", "function"],\n    "correct_answer": "def"\n}', 'extras': {'signature': 'EjQKMgEMOdbHBU5ceTqyWIRqVkN9WBJ9OoLxo2W0xqbr9i5YSDQjvn9y/7/oaegbPTtAcqP+'}}
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+2026-04-25 15:33:20,373 - INFO - Generating question for topic Python programming with difficulty easy
+2026-04-25 15:33:20,373 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:33:31,322 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:33:31,328 - ERROR - Error coming : Invalid json output: {'type': 'text', 'text': '{\n    "question": "Which keyword is used to define a function in Python?",\n    "options": ["func", "define", "def", "function"],\n    "correct_answer": "def"\n}', 'extras': {'signature': 'EjQKMgEMOdbHjVe9cs4oLzcoo+q43SphSANOlizaegd1ki6yKmnM758LfHLiXHh0D7ssULFx'}}
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+2026-04-25 15:33:31,329 - ERROR - Failed to generate MCQ : Generation failed after 3 attempts | Error: Invalid json output: {'type': 'text', 'text': '{\n    "question": "Which keyword is used to define a function in Python?",\n    "options": ["func", "define", "def", "function"],\n    "correct_answer": "def"\n}', 'extras': {'signature': 'EjQKMgEMOdbHjVe9cs4oLzcoo+q43SphSANOlizaegd1ki6yKmnM758LfHLiXHh0D7ssULFx'}}
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE  | File: /Users/huzaifamahmood/Desktop/study buddy/src/generator/question_generator.py | Line: 34
+2026-04-25 15:34:08,763 - INFO - Generating question for topic History with difficulty easy
+2026-04-25 15:34:08,765 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:34:11,066 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:34:11,068 - INFO - Sucesfully parsed the question
+2026-04-25 15:34:11,068 - INFO - Generated a valid MCQ Question
+2026-04-25 15:34:18,682 - INFO - Generating question for topic Science with difficulty medium
+2026-04-25 15:34:18,684 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:34:20,801 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:34:20,804 - INFO - Sucesfully parsed the question
+2026-04-25 15:34:20,804 - INFO - Generated a valid Fill in Blanks Question
+2026-04-25 15:34:57,776 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-04-25 15:34:57,784 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-25 15:34:57,809 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-initiated-analytics "HTTP/1.1 200 OK"
+2026-04-25 15:34:57,909 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-launched-telemetry "HTTP/1.1 200 OK"
+2026-04-25 15:34:58,512 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-25 15:35:09,795 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:35:09,799 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:35:12,289 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:35:12,291 - INFO - Sucesfully parsed the question
+2026-04-25 15:35:12,292 - INFO - Generated a valid MCQ Question
+2026-04-25 15:35:12,292 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:35:12,292 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:35:25,308 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:35:25,310 - INFO - Sucesfully parsed the question
+2026-04-25 15:35:25,310 - INFO - Generated a valid MCQ Question
+2026-04-25 15:35:25,310 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:35:25,311 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:35:27,189 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:35:27,190 - INFO - Sucesfully parsed the question
+2026-04-25 15:35:27,191 - INFO - Generated a valid MCQ Question
+2026-04-25 15:35:27,191 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:35:27,192 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:35:28,681 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:35:28,682 - INFO - Sucesfully parsed the question
+2026-04-25 15:35:28,682 - INFO - Generated a valid MCQ Question
+2026-04-25 15:35:28,682 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:35:28,683 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:35:29,683 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:35:29,685 - INFO - Sucesfully parsed the question
+2026-04-25 15:35:29,685 - INFO - Generated a valid MCQ Question
+2026-04-25 15:39:16,982 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-initiated-analytics "HTTP/1.1 200 OK"
+2026-04-25 15:39:16,983 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-04-25 15:39:16,992 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-25 15:39:17,097 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-launched-telemetry "HTTP/1.1 200 OK"
+2026-04-25 15:39:17,450 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-25 15:39:33,231 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:39:33,563 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:39:33,576 - INFO - Sucesfully parsed the question
+2026-04-25 15:39:33,577 - INFO - Generated a valid MCQ Question
+2026-04-25 15:39:33,577 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:39:33,925 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:39:33,926 - INFO - Sucesfully parsed the question
+2026-04-25 15:39:33,926 - INFO - Generated a valid MCQ Question
+2026-04-25 15:39:33,926 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:39:34,194 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:39:34,195 - INFO - Sucesfully parsed the question
+2026-04-25 15:39:34,195 - INFO - Generated a valid MCQ Question
+2026-04-25 15:39:34,195 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:39:34,478 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:39:34,479 - INFO - Sucesfully parsed the question
+2026-04-25 15:39:34,480 - INFO - Generated a valid MCQ Question
+2026-04-25 15:39:34,480 - INFO - Generating question for topic LLM with difficulty medium
+2026-04-25 15:39:35,051 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:39:35,051 - INFO - Sucesfully parsed the question
+2026-04-25 15:39:35,051 - INFO - Generated a valid MCQ Question
+2026-04-25 15:43:02,382 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-04-25 15:43:02,391 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-initiated-analytics "HTTP/1.1 200 OK"
+2026-04-25 15:43:02,391 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-04-25 15:43:02,497 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-launched-telemetry "HTTP/1.1 200 OK"
+2026-04-25 15:43:03,145 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-25 15:43:39,237 - INFO - HTTP Request: GET http://127.0.0.1:7861/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-04-25 15:43:39,252 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-initiated-analytics "HTTP/1.1 200 OK"
+2026-04-25 15:43:39,273 - INFO - HTTP Request: HEAD http://127.0.0.1:7861/ "HTTP/1.1 200 OK"
+2026-04-25 15:43:39,665 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-25 15:43:39,692 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-launched-telemetry "HTTP/1.1 200 OK"
+2026-04-25 15:44:11,521 - INFO - Generating question for topic LLM with difficulty easy
+2026-04-25 15:44:11,528 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:44:14,177 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:44:14,179 - INFO - Sucesfully parsed the question
+2026-04-25 15:44:14,179 - INFO - Generated a valid Fill in Blanks Question
+2026-04-25 15:44:14,179 - INFO - Generating question for topic LLM with difficulty easy
+2026-04-25 15:44:14,180 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:44:15,835 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:44:15,837 - INFO - Sucesfully parsed the question
+2026-04-25 15:44:15,838 - INFO - Generated a valid Fill in Blanks Question
+2026-04-25 15:44:15,838 - INFO - Generating question for topic LLM with difficulty easy
+2026-04-25 15:44:15,838 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:44:16,860 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:44:16,862 - INFO - Sucesfully parsed the question
+2026-04-25 15:44:16,862 - INFO - Generated a valid Fill in Blanks Question
+2026-04-25 15:44:16,862 - INFO - Generating question for topic LLM with difficulty easy
+2026-04-25 15:44:16,862 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:44:18,294 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:44:18,296 - INFO - Sucesfully parsed the question
+2026-04-25 15:44:18,296 - INFO - Generated a valid Fill in Blanks Question
+2026-04-25 15:44:18,296 - INFO - Generating question for topic LLM with difficulty easy
+2026-04-25 15:44:18,296 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-25 15:44:18,907 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-25 15:44:18,910 - INFO - Sucesfully parsed the question
+2026-04-25 15:44:18,910 - INFO - Generated a valid Fill in Blanks Question
+2026-04-25 15:46:24,331 - INFO - HTTP Request: GET http://127.0.0.1:7861/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-04-25 15:46:24,339 - INFO - HTTP Request: HEAD http://127.0.0.1:7861/ "HTTP/1.1 200 OK"
+2026-04-25 15:46:24,347 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-initiated-analytics "HTTP/1.1 200 OK"
+2026-04-25 15:46:24,470 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-launched-telemetry "HTTP/1.1 200 OK"
+2026-04-25 15:46:24,839 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-25 15:47:01,262 - INFO - Generating question for topic GenAI with difficulty easy
+2026-04-25 15:47:01,729 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:47:01,742 - INFO - Sucesfully parsed the question
+2026-04-25 15:47:01,743 - INFO - Generated a valid MCQ Question
+2026-04-25 15:47:01,743 - INFO - Generating question for topic GenAI with difficulty easy
+2026-04-25 15:47:02,342 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:47:02,345 - INFO - Sucesfully parsed the question
+2026-04-25 15:47:02,345 - INFO - Generated a valid MCQ Question
+2026-04-25 15:47:02,345 - INFO - Generating question for topic GenAI with difficulty easy
+2026-04-25 15:47:02,621 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:47:02,622 - INFO - Sucesfully parsed the question
+2026-04-25 15:47:02,622 - INFO - Generated a valid MCQ Question
+2026-04-25 15:47:02,622 - INFO - Generating question for topic GenAI with difficulty easy
+2026-04-25 15:47:02,954 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:47:02,956 - INFO - Sucesfully parsed the question
+2026-04-25 15:47:02,956 - INFO - Generated a valid MCQ Question
+2026-04-25 15:47:02,956 - INFO - Generating question for topic GenAI with difficulty easy
+2026-04-25 15:47:03,261 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-25 15:47:03,262 - INFO - Sucesfully parsed the question
+2026-04-25 15:47:03,263 - INFO - Generated a valid MCQ Question

@@ -1,3 +1,13 @@
+---
+title: Study Buddy AI
+emoji: 📚
+colorFrom: blue
+colorTo: purple
+sdk: gradio
+app_file: app.py
+pinned: false
+---
+
 # Study Buddy AI
 
 Study Buddy AI is an interactive Gradio application that generates quizzes using LLMs and grades user answers instantly. It is designed for fast self-testing with configurable topic, difficulty, question format, and model provider.

@@ -53,7 +53,7 @@ def reset_question_updates():
     return empty_cards, empty_questions, empty_mcqs, empty_fills
 
 
-def generate_quiz(model_provider, question_type, topic, difficulty, num_questions, quiz_manager):
+def generate_quiz(question_type, topic, difficulty, num_questions, quiz_manager):
     topic = (topic or "").strip()
     if not topic:
         empty_cards, empty_questions, empty_mcqs, empty_fills = reset_question_updates()
@@ -70,7 +70,7 @@ def generate_quiz(model_provider, question_type, topic, difficulty, num_question
             gr.update(visible=False),
         )
 
-    generator = QuestionGenerator(model_provider)
+    generator = QuestionGenerator()
     success = quiz_manager.generate_questions(
         generator,
         topic,
@@ -228,13 +228,6 @@ def create_app():
                             )
                     with gr.Column(scale=1):
                         with gr.Group(elem_classes=["control-group"]):
-                            model_provider = gr.Dropdown(
-                                choices=["Llama 80B powered by Groq", "Gemini 3 Flash"],
-                                value="Llama 80B powered by Groq",
-                                label="🤖 AI Model",
-                                info="Groq=Speed, Gemini=Depth"
-                            )
-                        with gr.Group(elem_classes=["control-group"]):
                             num_questions = gr.Slider(
                                 minimum=1,
                                 maximum=10,
@@ -322,7 +315,7 @@ def create_app():
         # EVENT HANDLERS
         generate_btn.click(
             fn=generate_quiz,
-            inputs=[model_provider, question_type, topic, difficulty, num_questions, quiz_manager],
+            inputs=[question_type, topic, difficulty, num_questions, quiz_manager],
             outputs=[
                 quiz_manager,
                 status,

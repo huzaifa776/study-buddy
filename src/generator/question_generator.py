@@ -10,9 +10,8 @@ import re
 
 
 class QuestionGenerator:
-    def __init__(self, provider: str = "Llama 80B powered by Groq"):
-        self.provider = provider
-        self.llm = get_llm(provider)
+    def __init__(self):
+        self.llm = get_llm()
         self.logger = get_logger(self.__class__.__name__)
 
     def _retry_and_parse(self,prompt,parser,topic,difficulty):
@@ -23,13 +22,10 @@ class QuestionGenerator:
 
                 response = self.llm.invoke(prompt.format(topic=topic , difficulty=difficulty))
 
-                # Handle different response formats (Groq vs Gemini)
                 content = response.content
                 
-                # Gemini returns dict with 'text' key and metadata
                 if isinstance(content, dict) and 'text' in content:
                     content = content['text']
-                # For some Gemini versions, content might be a list
                 elif isinstance(content, list):
                     content = " ".join([str(item) for item in content])
                 

@@ -10,14 +10,12 @@ pinned: false
 
 # Study Buddy AI
 
-Study Buddy AI is an interactive Gradio application that generates quizzes using LLMs and grades user answers instantly. It is designed for fast self-testing with configurable topic, difficulty, question format, and model provider.
+Study Buddy AI is an interactive Gradio application that generates quizzes using a Groq-hosted LLM and grades user answers instantly. It is designed for fast self-testing with configurable topic, difficulty, and question format.
 
 The app currently supports:
 - Multiple Choice questions
 - Fill in the Blank questions
-- Two model backends:
-	- Llama (served via Groq)
-	- Gemini Flash (served via Google Generative AI)
+
 
 Generated quizzes can be evaluated in-app and exported as CSV for later review.
 
@@ -31,7 +29,6 @@ Generated quizzes can be evaluated in-app and exported as CSV for later review.
 	- Easy
 	- Medium
 	- Hard
-- Switch model provider from the UI
 - Instant scoring summary after submission
 - Detailed results table per question
 - Export results to timestamped CSV files
@@ -43,15 +40,14 @@ Generated quizzes can be evaluated in-app and exported as CSV for later review.
 - Gradio (web UI)
 - Pandas (results handling)
 - LangChain core parsers/prompts
-- `langchain-groq` for Groq-backed Llama model calls
-- `langchain-google-genai` for Gemini model calls
+- `langchain-groq` for Groq model calls
 - Pydantic for structured output parsing/validation
 - `python-dotenv` for environment variable loading
 
 ## How It Works
 
 1. User configures quiz settings in the UI.
-2. App creates a `QuestionGenerator` with the selected provider.
+2. App creates a `QuestionGenerator` backed by Groq.
 3. Prompt templates request strict JSON output from the model.
 4. Responses are parsed into Pydantic schemas.
 5. Questions are stored in a `QuizManager` state object.
@@ -77,7 +73,7 @@ Generated quizzes can be evaluated in-app and exported as CSV for later review.
 		├── generator/
 		│   └── question_generator.py  # LLM generation + parsing + retries
 		├── llm/
-		│   └── groq_client.py         # Provider/model client factory
+		│   └── groq_client.py         # Groq client factory
 		├── models/
 		│   └── question_schemas.py    # Pydantic output schemas
 		├── prompt/
@@ -90,9 +86,7 @@ Generated quizzes can be evaluated in-app and exported as CSV for later review.
 
 - Python 3.10+
 - `pip`
-- API keys for one or both providers:
-	- Groq API key (required if using Groq option)
-	- Gemini/Google API key (required if using Gemini option)
+- Groq API key (required)
 
 ## Installation
 
@@ -127,20 +121,16 @@ pip install -e .
 Create a `.env` file in the project root:
 
 ```env
-# Required for Groq model option
+# Required for Groq model
 GROQ_API_KEY=your_groq_api_key_here
-
-# Required for Gemini model option
-# Either of these is accepted by the app
-GEMINI_API_KEY=your_gemini_api_key_here
-# GOOGLE_API_KEY=your_google_api_key_here
 ```
 
 Current defaults from code:
-- Groq model: `llama-3.3-70b-versatile`
-- Gemini model: `gemini-3.1-flash-lite-preview`
+- Groq model: `groq/compound`
 - Temperature: `0.9`
 - Max retries per generation: `3`
+
+If you want to change the model later, update `MODEL_NAME` in [src/config/settings.py]. The app reads that value in [src/llm/groq_client.py].
 
 ## Running the App
 
@@ -158,7 +148,6 @@ Gradio will print a local URL in the terminal (typically `http://127.0.0.1:7860`
 	 - Topic
 	 - Question format
 	 - Difficulty
-	 - Model provider
 	 - Number of questions
 2. Click `Generate Quiz`.
 3. Answer questions in Step 2.
@@ -207,21 +196,14 @@ Check these first:
 Quick checks:
 
 ```bash
-python3 -m pip show gradio pandas langchain langchain-groq langchain-google-genai python-dotenv
+python3 -m pip show gradio pandas langchain langchain-groq python-dotenv
 ```
 
 ### Quiz generation fails in the UI
 
 - Verify network access
 - Verify API keys are valid and not expired
-- Try switching model provider
 - Inspect the latest file in `logs/` for parser or provider errors
-
-### Gemini option does not work
-
-Ensure one of these variables is set:
-- `GEMINI_API_KEY`
-- `GOOGLE_API_KEY`
 
 ### Save Results does nothing
 

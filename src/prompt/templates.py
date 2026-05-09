@@ -2,34 +2,39 @@ from langchain_core.prompts import PromptTemplate
 
 mcq_prompt_template = PromptTemplate(
     template=(
-        "Generate a {difficulty} multiple-choice question about {topic}.\n\n"
-        "Return ONLY a JSON object with these exact fields:\n"
-        "- 'question': A clear, specific question\n"
-        "- 'options': An array of exactly 4 possible answers\n"
-        "- 'correct_answer': One of the options that is the correct answer\n\n"
-        "Example format:\n"
-        '{{\n'
-        '    "question": "What is the capital of France?",\n'
-        '    "options": ["London", "Berlin", "Paris", "Madrid"],\n'
-        '    "correct_answer": "Paris"\n'
-        '}}\n\n'
+        "Generate exactly {count} distinct {difficulty} multiple-choice questions about {topic}.\n\n"
+        "Return ONLY a JSON object with this exact shape:\n"
+        '{\n'
+        '    "questions": [\n'
+        '        {\n'
+        '            "question": "...",\n'
+        '            "options": ["...", "...", "...", "..."],\n'
+        '            "correct_answer": "..."\n'
+        '        }\n'
+        '    ]\n'
+        '}\n\n'
+        "Each question must have exactly 4 options and the correct_answer must be one of them.\n\n"
+        "Make the questions different from each other and avoid repeating the same facts.\n\n"
         "Your response:"
     ),
-    input_variables=["topic", "difficulty"]
+    input_variables=["topic", "difficulty", "count"]
 )
 
 fill_blank_prompt_template = PromptTemplate(
     template=(
-        "Generate a {difficulty} fill-in-the-blank question about {topic}.\n\n"
-        "Return ONLY a JSON object with these exact fields:\n"
-        "- 'question': A sentence with '_____' marking where the blank should be\n"
-        "- 'answer': The correct word or phrase that belongs in the blank\n\n"
-        "Example format:\n"
-        '{{\n'
-        '    "question": "The capital of France is _____.",\n'
-        '    "answer": "Paris"\n'
-        '}}\n\n'
+        "Generate exactly {count} distinct {difficulty} fill-in-the-blank questions about {topic}.\n\n"
+        "Return ONLY a JSON object with this exact shape:\n"
+        '{\n'
+        '    "questions": [\n'
+        '        {\n'
+        '            "question": "... _____ ...",\n'
+        '            "answer": "..."\n'
+        '        }\n'
+        '    ]\n'
+        '}\n\n'
+        "Each question must contain '___' or '_____' in the sentence and the answer must match the blank.\n\n"
+        "Make the questions different from each other and avoid repeating the same facts.\n\n"
         "Your response:"
     ),
-    input_variables=["topic", "difficulty"]
+    input_variables=["topic", "difficulty", "count"]
 )

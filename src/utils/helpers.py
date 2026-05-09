@@ -15,10 +15,10 @@ class QuizManager:
         self.results=[]
 
         try:
-            for _ in range(num_questions):
-                if question_type == "Multiple Choice":
-                    question = generator.generate_mcq(topic,difficulty.lower())
+            if question_type == "Multiple Choice":
+                questions = generator.generate_mcqs(topic, difficulty.lower(), num_questions)
 
+                for question in questions:
                     generated_questions.append({
                         'type' : 'MCQ',
                         'question' : question.question,
@@ -26,9 +26,10 @@ class QuizManager:
                         'correct_answer': question.correct_answer
                     })
 
-                else:
-                    question = generator.generate_fill_blank(topic,difficulty.lower())
+            else:
+                questions = generator.generate_fill_blanks(topic, difficulty.lower(), num_questions)
 
+                for question in questions:
                     generated_questions.append({
                         'type' : 'Fill in the blank',
                         'question' : question.question,

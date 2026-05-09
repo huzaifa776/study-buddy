@@ -126,9 +126,9 @@ GROQ_API_KEY=your_groq_api_key_here
 ```
 
 Current defaults from code:
-- Groq model: `groq/compound`
-- Temperature: `0.9`
-- Max retries per generation: `3`
+- Groq model: `groq/compound-mini`
+- Temperature: `0.2`
+- Max retries per generation: `1`
 
 If you want to change the model later, update `MODEL_NAME` in [src/config/settings.py]. The app reads that value in [src/llm/groq_client.py].
 

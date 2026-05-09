@@ -20,13 +20,20 @@ def build_question_updates(questions):
     mcq_updates = []
     fill_updates = []
 
+    def format_mcq_question(question_text, options, index):
+        option_lines = "\n".join([f"- {option}" for option in options])
+        return f"### Question {index + 1}\n{question_text}\n\n**Options:**\n{option_lines}"
+
     for index in range(MAX_QUESTIONS):
         if index < len(questions):
             question = questions[index]
             card_updates.append(gr.update(visible=True))
-            question_updates.append(
-                gr.update(value=f"### Question {index + 1}\n{question['question']}", visible=True)
-            )
+            if question["type"] == "MCQ":
+                question_value = format_mcq_question(question["question"], question["options"], index)
+            else:
+                question_value = f"### Question {index + 1}\n{question['question']}"
+
+            question_updates.append(gr.update(value=question_value, visible=True))
 
             if question["type"] == "MCQ":
                 mcq_updates.append(
@@ -264,7 +271,7 @@ def create_app():
                     
                     # MCQ Answer
                     with gr.Group(visible=True, elem_classes=["answer-input"]):
-                        mcq_input = gr.Radio(
+                        mcq_input = gr.Dropdown(
                             choices=[],
                             label="Select your answer",
                             visible=False,
